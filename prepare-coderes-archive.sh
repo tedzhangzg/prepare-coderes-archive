@@ -29,7 +29,7 @@ dir_final_zip_GoogleDrive="$dir_GoogleDrive_root/AaOfl/SharedByMe/ITPublicFolder
 
 # clean
 # 
-pushd "$dir_OneDrive_root/AaSync"
+pushd "$dir_OneDrive_root/AaOfl"
 # find . -type d -name "__MACOSX" -delete
 find . -type f -name "*.DS_Store" -delete
 find . -type f -name "Icon*" -delete
@@ -38,7 +38,7 @@ find . -type f -name "Thumbs.db" -delete
 # find . -type f -name ".*" -delete
 popd
 # 
-pushd "$dir_GoogleDrive_root/AaSync"
+pushd "$dir_GoogleDrive_root/AaOfl"
 # find . -type d -name "__MACOSX" -delete
 find . -type f -name "*.DS_Store" -delete
 find . -type f -name "Icon*" -delete
