@@ -22,7 +22,7 @@ dir_GoogleDrive_root="/Users/ted/Library/CloudStorage/GoogleDrive-tedzhangzg@gma
 tmpdir="$HOME/Downloads/temppreparchive"
 # 
 dir_src_localgitrepo_root="$HOME/code"
-dir_src_OneDrive_folder_root="$dir_OneDrive_root/AaOfl/SharedByMe/Public-ITFolder/code-res"
+dir_src_coderes_root="$dir_OneDrive_root/AaOfl/SharedByMe/Public-ITFolder/code-res"
 # 
 dir_final_zip_OneDrive="$dir_OneDrive_root/AaOfl/SharedByMe/Public-ITFolder"
 dir_final_zip_GoogleDrive="$dir_GoogleDrive_root/AaOfl/SharedByMe/Public-ITFolder"
@@ -108,7 +108,11 @@ then
 fi
 cp -R "$dir_src_localgitrepo_root/$name_src_local_folder"/a_readme.txt "$tmpdir/$name_src_local_folder"
 cp -R "$dir_src_localgitrepo_root/$name_src_local_folder"/script-init* "$tmpdir/$name_src_local_folder"
-cp -R "$dir_src_OneDrive_folder_root/$name_src_local_folder"/* "$tmpdir/$name_src_local_folder"
+if [[ (4 -le $input_osplatform) && ($input_osplatform -le 6) ]]
+then
+    cp -R "$dir_src_localgitrepo_root/$name_src_local_folder"/script-testkit* "$tmpdir/$name_src_local_folder"
+fi
+cp -R "$dir_src_coderes_root/$name_src_local_folder"/* "$tmpdir/$name_src_local_folder"
 
 # zip
 pushd $tmpdir
