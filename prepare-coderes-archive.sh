@@ -22,7 +22,7 @@ dir_GoogleDrive_root="/Users/ted/Library/CloudStorage/GoogleDrive-tedzhangzg@gma
 tmpdir="$HOME/Downloads/temppreparchive"
 # 
 dir_src_localgitrepo_root="$HOME/code"
-dir_src_coderes_root="$dir_OneDrive_root/AaOfl/SharedByMe/Public-ITFolder/code-res"
+dir_src_coderes_root="$dir_GoogleDrive_root/AaOfl/SharedByMe/Public-ITFolder/code-res"
 # 
 dir_final_zip_OneDrive="$dir_OneDrive_root/AaOfl/SharedByMe/Public-ITFolder"
 dir_final_zip_GoogleDrive="$dir_GoogleDrive_root/AaOfl/SharedByMe/Public-ITFolder"
